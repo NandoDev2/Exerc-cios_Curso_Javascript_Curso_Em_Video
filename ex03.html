@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <title>Exercício 03 Javascript</title>
+</head>
+<body>
+    <script>
+      // O comando window.prompt, por padrão trata apenas de variáveis tipo string. Se queremos trabalhar com números precisamos fazer a conversão para number  
+      var n1 = Number.parseInt(window.prompt('Digite um número: '))
+      // O Number.parseInt transforma uma String em número inteiro
+      var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) 
+      //o Number.parse Float transforma uma String em número real (quebrado) 
+      // Caso eu deseje que o navegador detecte qual o tipo de número (real ou inteiro) basta usar o Number(n).
+      var s =  n1 + n2
+      // Para transformar de number para string posso usar String(n) ou n.toString()
+      window.alert('A soma dos valores é ' + s)
+      window.alert('A soma dos valores é ' + String(s))
+      window.alert('A soma dos valores é' + s.toString())
+      // O sinal de + serve tanto para adição, quanto para concatenação
+      //(Number + Number) -> Adição
+      //(String + String) -> Concatenação
+        
+    </script>
+</body>
+</html>

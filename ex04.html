@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04 Javascript</title>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual é seu nome ?')
+        // o comando document.write escreve na página conforme exemplo abaixo
+        document.write(`Olá ${nome}.Seu nome tem ${nome.length} letras`)
+        //Existem várias formas de se formatar uma String
+        //No caso acima {nome.length} a variável nome junto com o .length deve mostrar o tamanho ou quantidade  de letras que a variável string possui.
+        document.write(`Seu nome em MAIÙSCULAS é ${nome.toUpperCase()}`)
+        //No caso acima [nome.toUpperCase()] transforma a variável string em toda maiúscula
+        document.write(`Seu nome em MAIÙSCULAS é ${nome.toLowerCase()}`)
+        //No caso acima [nome.toLowerCase()] transforma a variável string em toda minúscula
+    </script>
+</body>
+</html>
