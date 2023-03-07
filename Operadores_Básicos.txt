@@ -38,8 +38,8 @@ var d = 10 - a/2 |Como a precedência é da divisão, a variável será 6
 var e = 6*2/d  |Como a precedência é de quem aparecer primeiro, da esquerda para a direita a variável será 2
 var f = b%e + 4/e | Na ordem será feita a primeira operação, a terceira pera precedência, e por ultimo serão somados os dois valores resultantes.
 
-/////////////////////////////////////////////////////////////////////////////////////
-
+-------------------------------------------------------------------------------------
+OPERADORES DE ATRIBUIÇÃO
 Auto-Atribuição
 
 var n = 3
@@ -68,6 +68,18 @@ Devido á frequência do uso do 1 na auto atribuição, foi criada uma maneira m
 var x = 5
 x = x + 1 ->> x + = 1 ->> x++
 x = x - 1 ->> x - = 1 ->> x--
+
+-----------------------------------------------------------------------------------
+OPERADORES RELACIONAIS
+
+ >   | Maior que
+ <   | Menor que
+ >=  | Maior ou igual que
+ <=  | Menor ou igual que
+ ==  | Igual
+ !=  | Diferente
+
+ 
 
 
 
