@@ -1,0 +1,77 @@
+///////////////////////////////////////////////////////////////////////////////////////
+Tipos de Operadores
+(os mais básicos)
+-> Aritiméticos
+-> Atribuição
+-> Relacionais
+-> Lógicos
+-> Ternais
+
+---------------------------------------------------------------------------------------
+
+Operadores Aritiméticos
+
+  + -> Realiza a soma entre dois valores
+  - -> Realiza a subtração entre dois valores
+  * -> Realiza a multiplicação entre dois valores
+  / -> Realiza a divisão entre dois valores
+  % -> Resto de uma divisão inteira, por exemplo 5%2 = 1
+ ** -> Realiza a exponênciação, sendo o primeiro número a base e o segundo a potência
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+Ordem de Precedência nos Operadores Aritiméticos
+
+() -> ao colocar os parênteses dá-se prioridade máxima
+** -> Logo após vem a exponenciação
+* / % -> Todos eles possuem a mesma posição de precedência. Mas se mais de um aparecer nas mesma expresão? A ordem será da esquerda para a direita, quem for aparecendo primeiro na expressão.
++ - ->    
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+Exemplos
+
+var a = 5 + 3  | A variável será 8
+var b = a % 5  | O resto da divisão inteira de 8 por 5 é 3. Portando a variável será 3
+var c = 5*b**2 | Como a precedência é da exponenciação, a variável será 45
+var d = 10 - a/2 |Como a precedência é da divisão, a variável será 6
+var e = 6*2/d  |Como a precedência é de quem aparecer primeiro, da esquerda para a direita a variável será 2
+var f = b%e + 4/e | Na ordem será feita a primeira operação, a terceira pera precedência, e por ultimo serão somados os dois valores resultantes.
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+Auto-Atribuição
+
+var n = 3
+n = n + 4    -> Logo a variável passa a valer 7
+n = n - 5    -> O n que antes valia 7, passa a valer 2
+PODE SER FEITO COM QUAISQUER OPERAÇÔES ARITMÉTICAS
+
+É possível reescrever as expressões acima de maneira encurtada
+
+n + = 4   ->> É igual a escrever (n = n + 4 )
+n - = 5   ->> É igual a escrever (n = n - 5)
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+Incremento
+
+ Com frequência se usa o incremento de 1 durante uma Auto-Atribuição de variável. Por exemplo:
+
+ var x = 5 
+ x = x + 1  ->> x + = 1
+ x = x - 1  ->> x - = 1
+
+Note que ao lado está a simplificação já conhecida da auto atribuição
+Devido á frequência do uso do 1 na auto atribuição, foi criada uma maneira mais simplificada para expressar.
+
+var x = 5
+x = x + 1 ->> x + = 1 ->> x++
+x = x - 1 ->> x - = 1 ->> x--
+
+
+
+
+
+ 
+
