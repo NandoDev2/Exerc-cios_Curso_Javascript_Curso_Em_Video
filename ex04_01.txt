@@ -1,0 +1,6 @@
+Formatando um String
+ Exemplos:
+'Eu estou aprendendo s'  --> Não faz a interpolação
+'Eu estou aprendendo' + s --> Faz a concatenação
+'Eu estou aprendendo ${s}' --> Usa template string
+
