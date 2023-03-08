@@ -39,6 +39,7 @@ var e = 6*2/d  |Como a precedência é de quem aparecer primeiro, da esquerda pa
 var f = b%e + 4/e | Na ordem será feita a primeira operação, a terceira pera precedência, e por ultimo serão somados os dois valores resultantes.
 
 -------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 OPERADORES DE ATRIBUIÇÃO
 Auto-Atribuição
 
@@ -70,6 +71,7 @@ x = x + 1 ->> x + = 1 ->> x++
 x = x - 1 ->> x - = 1 ->> x--
 
 -----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 OPERADORES RELACIONAIS
 
  >   | Maior que
@@ -78,6 +80,90 @@ OPERADORES RELACIONAIS
  <=  | Menor ou igual que
  ==  | Igual
  !=  | Diferente
+
+ São comparados dois valores, e o resultado será true ou false
+
+ Exemplos:
+
+ 5>2 => true                    
+ 7<4 => false
+ 8>=8 => true
+ 9<=7 => false
+ 5==5 => true
+ 4!=4 => false
+
+ preco >= 200.50
+ idade < 18
+ curso == 'Javascript'
+ n1 != n2
+
+ Note o seguinte exemplo:
+
+ 5 == 5    -> true (Os dois possuem o mesmo valor? Resp. Sim)
+ 5 == '5'  -> true (Os dois possuem o mesmo valor? Resp. Sim)
+
+ Nesse operador acima não há uma distinção entre number e string. Para executar uma operação relacional que leve em consideração o tipo de variável, pode-se fazer da seguinte forma:
+
+ 5 === '5'    ->  false     
+ (Os dois são iguais em valores e iguais em tipos? Resp. Não)
+
+ O operador acima chama-se operador de identidade, ou de igualdade restrita. Onde para aparecer true, tanto o valor quanto o tipo devem bater.
+ Veja o novo exemplo:
+
+ 5 != '5'    -> false   
+ (Os dois são diferentes em valores? Resp. Não)
+
+ 5 !== '5'   -> true    
+ (Os dois são diferentes em valores ou diferentes em tipos? Resp. Sim)
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OPERADORES LÓGICOS
+
+!  -> Negação
+&& -> Conjunção (e)
+|| -> Disjunção (ou)
+
+Exemplo prático:
+
+Desejo uma caneta de qualquer cor, menos(negação) azul.
+Portanto não fico satisfeito se receber azul
+
+Quero uma caneta azul e uma vermelha
+Só fico satisfeito se eu receber as duas ao mesmo tempo
+
+Quero uma caneta azul ou uma vermelha
+Fico satisfeito se apenas receber uma azul, uma vermelha ou as duas ao mesmo tempo.
+
+Exemplos na programação:
+
+Negação ou !
+
+!true -> false
+!false -> true
+
+Conjução (e) (&&)
+
+True && True  -> True
+True && False -> False
+False && True -> False
+False && False -> False
+
+Disjunção (ou) (||)
+
+True && True  -> True
+True && False -> True
+False && True -> True
+False && False -> False
+
+
+
+
+
+
+
+
+
+
 
  
 
