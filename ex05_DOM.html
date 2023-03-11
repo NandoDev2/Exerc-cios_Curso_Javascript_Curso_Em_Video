@@ -17,7 +17,8 @@
     <h1> Iniciando Estudos com DOM</h1>
     <p> Aqui vai o Resultado</p>
     <p> Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
-    <div id="msg"> Clique em mim</div>
+    <div id="msg"> Clique em mim com ID</div>
+    <div class="msg"> Clique em mim com Class</div>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write(p1.innerText)
@@ -35,6 +36,11 @@
 
         var d = window.document.getElementById('msg')
         d.style.background = 'green'
+       //d.innerText = 'Estou Aguardando'//
+
+
+
+
 
 
     </script>
