@@ -6,7 +6,7 @@ Tipos de Operadores
 -> Atribuição
 -> Relacionais
 -> Lógicos
--> Ternais
+-> Ternários
 
 ---------------------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ Ordem de Precedência nos Operadores Aritiméticos
 () -> ao colocar os parênteses dá-se prioridade máxima
 ** -> Logo após vem a exponenciação
 * / % -> Todos eles possuem a mesma posição de precedência. Mas se mais de um aparecer nas mesma expresão? A ordem será da esquerda para a direita, quem for aparecendo primeiro na expressão.
-+ - ->    
++ - -> A ordem será da esquerda para a direita    
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -39,8 +39,8 @@ var d = 10 - a/2 |Como a precedência é da divisão, a variável será 6
 var e = 6*2/d  |Como a precedência é de quem aparecer primeiro, da esquerda para a direita a variável será 2
 var f = b%e + 4/e | Na ordem será feita a primeira operação, a terceira pera precedência, e por ultimo serão somados os dois valores resultantes.
 
--------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 OPERADORES DE ATRIBUIÇÃO
 Auto-Atribuição
 
@@ -54,7 +54,7 @@ PODE SER FEITO COM QUAISQUER OPERAÇÔES ARITMÉTICAS
 n + = 4   ->> É igual a escrever (n = n + 4 )
 n - = 5   ->> É igual a escrever (n = n - 5)
 
-/////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 Incremento
 
@@ -71,53 +71,55 @@ var x = 5
 x = x + 1 ->> x + = 1 ->> x++
 x = x - 1 ->> x - = 1 ->> x--
 
------------------------------------------------------------------------------------
------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 OPERADORES RELACIONAIS
 
- >   | Maior que
- <   | Menor que
- >=  | Maior ou igual que
- <=  | Menor ou igual que
- ==  | Igual
- !=  | Diferente
+    >   | Maior que
+    <   | Menor que
+    >=  | Maior ou igual que
+    <=  | Menor ou igual que
+    ==  | Igual
+    !=  | Diferente
 
- São comparados dois valores, e o resultado será true ou false
+  São comparados dois valores, e o resultado será true ou false
 
- Exemplos:
+  Exemplos:
 
- 5>2 => true                    
- 7<4 => false
- 8>=8 => true
- 9<=7 => false
- 5==5 => true
- 4!=4 => false
+    5>2 => true                    
+    7<4 => false
+    8>=8 => true
+    9<=7 => false
+    5==5 => true
+    4!=4 => false
 
- preco >= 200.50
- idade < 18
- curso == 'Javascript'
- n1 != n2
+  Exemplos usando variáveis:
 
- Note o seguinte exemplo:
+    preco >= 200.50
+    idade < 18
+    curso == 'Javascript'
+    n1 != n2
 
- 5 == 5    -> true (Os dois possuem o mesmo valor? Resp. Sim)
- 5 == '5'  -> true (Os dois possuem o mesmo valor? Resp. Sim)
+  Note o seguinte exemplo:
 
- Nesse operador acima não há uma distinção entre number e string. Para executar uma operação relacional que leve em consideração o tipo de variável, pode-se fazer da seguinte forma:
+    5 == 5    -> true (Os dois possuem o mesmo valor? Resp. Sim)
+    5 == '5'  -> true (Os dois possuem o mesmo valor? Resp. Sim)
 
- 5 === '5'    ->  false     
- (Os dois são iguais em valores e iguais em tipos? Resp. Não)
+  Nesse operador acima não há uma distinção entre number e string. Para executar uma operação relacional que leve em consideração o tipo de variável, pode-se fazer da seguinte forma:
 
- O operador acima chama-se operador de identidade, ou de igualdade restrita. Onde para aparecer true, tanto o valor quanto o tipo devem bater.
- Veja o novo exemplo:
+    5 === '5'    ->  false     
+    (Os dois são iguais em valores e iguais em tipos? Resp. Não)
 
- 5 != '5'    -> false   
- (Os dois são diferentes em valores? Resp. Não)
+  O operador acima chama-se operador de identidade, ou de igualdade restrita. Onde para aparecer true, tanto o valor quanto o tipo devem bater.
 
- 5 !== '5'   -> true    
- (Os dois são diferentes em valores ou diferentes em tipos? Resp. Sim)
+    Veja o novo exemplo:
 
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      5 != '5'    -> false   
+      (Os dois são diferentes em valores? Resp. Não)
+
+      5 !== '5'   -> true    
+      (Os dois são diferentes em valores ou diferentes em tipos? Resp. Sim)
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  OPERADORES LÓGICOS
 
   !  -> Negação
@@ -156,7 +158,54 @@ Disjunção (ou) (||)
   False && True -> True
   False && False -> False
 
-///////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Ordem de Precedência com os Operadores acima citados
+
+  A precedência maior começa de cima para baixo
+
+    Primeiro vem os Operadores Aritiméticos naquela ordem já apresentada, sendo os que estão entre o underline (_) possuem a mesma ordem de precedência sendo a ordem de leitura da esquera para a direita, ou seja o primeiro a aparecer
+
+      () _ ** _ * / % _ + -  
+
+    Depois vem os Relacionais sem ordem de precedência entre eles
+ 
+      >  <  >=  <=  ==  !=  
+
+    Logo após vem Operadores Lógicos, que possuem ordem de precedência 
+
+      ! (não)
+      && (e)
+      || (ou)
+
+    Logo após vem os Operadores Ternários que usam (?) e (:) na mesma expressão
+
+      ? :
+
+----------------------------------------------------------------------------------------------
+Operadores Ternários (?) e (:)
+
+  Operador ternário recebe três argumentos: O primeiro é um argumento de comparação. O segundo é o resultado caso a comparação seja verdadeira. O terceiro é o resultado caso ela seja false. As estruturas abaixo ilustram o funcionamento.
+
+      condição? valor se for verdareiro : valor se for falso
+    
+                ou
+
+      teste? true : false
+
+      Exemplo de uso:
+
+      média >= 7.0 ? "Aprovado" : "Reprovado"
+
+
+
+
+
+
+
+
+
+
 
 
 
