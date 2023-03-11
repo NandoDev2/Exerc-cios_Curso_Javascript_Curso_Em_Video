@@ -1,4 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////
+
 Tipos de Operadores
 (os mais básicos)
 -> Aritiméticos
@@ -27,7 +28,7 @@ Ordem de Precedência nos Operadores Aritiméticos
 * / % -> Todos eles possuem a mesma posição de precedência. Mas se mais de um aparecer nas mesma expresão? A ordem será da esquerda para a direita, quem for aparecendo primeiro na expressão.
 + - ->    
 
-/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
 Exemplos
 
@@ -117,43 +118,48 @@ OPERADORES RELACIONAIS
  (Os dois são diferentes em valores ou diferentes em tipos? Resp. Sim)
 
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-OPERADORES LÓGICOS
+ OPERADORES LÓGICOS
 
-!  -> Negação
-&& -> Conjunção (e)
-|| -> Disjunção (ou)
+  !  -> Negação
+  && -> Conjunção (e)
+  || -> Disjunção (ou)
 
-Exemplo prático:
+ Exemplo prático:
 
-Desejo uma caneta de qualquer cor, menos(negação) azul.
-Portanto não fico satisfeito se receber azul
+  Desejo uma caneta de qualquer cor, menos(negação) azul.
+    Portanto não fico satisfeito se receber azul
 
-Quero uma caneta azul e uma vermelha
-Só fico satisfeito se eu receber as duas ao mesmo tempo
+  Quero uma caneta azul e uma vermelha
+    Só fico satisfeito se eu receber as duas ao mesmo tempo
 
-Quero uma caneta azul ou uma vermelha
-Fico satisfeito se apenas receber uma azul, uma vermelha ou as duas ao mesmo tempo.
+  Quero uma caneta azul ou uma vermelha
+    Fico satisfeito se apenas receber uma azul, uma vermelha ou as duas ao mesmo tempo.
 
-Exemplos na programação:
+ Exemplos na programação:
 
-Negação ou !
+ Negação ou !
 
-!true -> false
-!false -> true
+  !true -> false
+  !false -> true
 
-Conjução (e) (&&)
+ Conjução (e) (&&)
 
-True && True  -> True
-True && False -> False
-False && True -> False
-False && False -> False
+  True && True  -> True
+  True && False -> False
+  False && True -> False
+  False && False -> False
 
 Disjunção (ou) (||)
 
-True && True  -> True
-True && False -> True
-False && True -> True
-False && False -> False
+  True && True  -> True
+  True && False -> True
+  False && True -> True
+  False && False -> False
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 
 
