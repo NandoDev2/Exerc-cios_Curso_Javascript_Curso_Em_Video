@@ -37,7 +37,7 @@ var b = a % 5  | O resto da divisão inteira de 8 por 5 é 3. Portando a variáv
 var c = 5*b**2 | Como a precedência é da exponenciação, a variável será 45
 var d = 10 - a/2 |Como a precedência é da divisão, a variável será 6
 var e = 6*2/d  |Como a precedência é de quem aparecer primeiro, da esquerda para a direita a variável será 2
-var f = b%e + 4/e | Na ordem será feita a primeira operação, a terceira pera precedência, e por ultimo serão somados os dois valores resultantes.
+var f = b%e + 4/e | Na ordem será feita a primeira operação, a terceira pela precedência, e por ultimo serão somados os dois valores resultantes.
 
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
